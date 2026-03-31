@@ -118,6 +118,6 @@ You can use standard Vue components or built-in Slidev components:
 
 ### Assets & Components Best Practices
 
-1. **Images**: Refer to local images as `/image-name.png` (assuming they are in `public/`).
+1. **Images**: Refer to local images using absolute paths relative to the `public/` root (e.g., `/images/logo.png` if stored in `public/images/logo.png`).
 2. **Components**: Use `<MyComponent />` on slides, but remind the user they must create it in `components/MyComponent.vue`.
 3. **Styles**: Use UnoCSS (default in Slidev) for quick styling instead of complex CSS files.

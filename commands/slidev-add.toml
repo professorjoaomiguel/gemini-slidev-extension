@@ -4,7 +4,7 @@ I want to append a new slide to the existing presentation.
 
 1. **Pre-check**:
    - Verify if 'slides.md' exists in the current directory.
-   - If 'slides.md' is missing, inform me and suggest using '/slidev:init' or '/slidev:generate' first.
+   - If 'slides.md' is missing, inform me and offer to generate a base presentation using '/slidev:generate' if I provide a topic.
 
 2. **Details**:
    - Ask for the layout (choose from 'default', 'center', 'two-cols', 'image-left', 'image-right', 'quote', 'statement') and content.

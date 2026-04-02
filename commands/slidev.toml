@@ -4,6 +4,7 @@ Please use the available Slidev subcommands to help the user with presentation t
 
 Analyze the user request and determine the most appropriate subcommand:
 
+- For questions about capabilities, features, or what the extension can do (e.g., "what can you do?", "what are your capabilities?", "what do you propose?", "help me understand this extension"): use `/help`
 - For initializing a new project: use `/init`
 - For generating content from a topic/outline: use `/generate`
 - For adding a new slide: use `/add`
@@ -16,6 +17,9 @@ Be intelligent about interpreting the user's intent. For example:
 - "Start the server" -> `/run`
 - "Add a slide about features" -> `/add`
 - "Save as PDF" -> `/export`
+- "What can you do?" -> `/help`
+- "Explain your capabilities" -> `/help`
+- "What do you propose for this repo?" -> `/help`
 
 User request: {{args}}
 """

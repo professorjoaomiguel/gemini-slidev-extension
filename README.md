@@ -38,12 +38,20 @@ Restart the Gemini CLI. The following commands will be available:
 - `/export` - Export presentation to PDF/PNG
 - `/run` - Start the local development server
 - `/slidev` - Main entry point and help
+- `/help` - Show all capabilities and proposals for the current repo
 
 ## 💡 Usage
 
 The extension provides a suite of commands for the entire presentation lifecycle:
 
 ### 🎯 Specific Commands (Recommended)
+
+**Show capabilities:**
+
+```bash
+/help
+# Displays all commands, capabilities, and what the extension proposes to do on your repo
+```
 
 **Initialize Project:**
 
@@ -95,6 +103,8 @@ The extension provides a suite of commands for the entire presentation lifecycle
 /slidev I need a presentation about Rust programming language for beginners
 /slidev Add a slide with a code block showing a Hello World example in Python
 /slidev Export the current deck to PNG
+/slidev What can you do?
+/slidev What do you propose for this repo?
 ```
 
 ## 🔧 Technical Details

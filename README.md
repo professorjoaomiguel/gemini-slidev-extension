@@ -104,7 +104,7 @@ The extension provides a suite of commands for the entire presentation lifecycle
 This extension adheres to strict quality standards defined in `GEMINI.md`:
 
 - **Markdown-Centric**: Treats `slides.md` as the source of truth.
-- **Component-Driven**: leverages Slidev's built-in layouts and Vue components.
+- **Component-Driven**: Leverages Slidev's built-in layouts and Vue components.
 - **Progressive Disclosure**: Smart use of animations to control information flow.
 
 ### Configuration

@@ -10,6 +10,21 @@
   "engines": {
     "node": ">=18.0.0"
   },
+  "contributes": {
+    "commands": [
+      {
+        "command": "gemini-slidev.enhanceSlide",
+        "title": "Gemini Slidev: Enhance Content"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "gemini-slidev.enhanceSlide"
+        }
+      ]
+    }
+  },
   "devDependencies": {
     "eslint": "^9.24.0",
     "eslint-config-prettier": "^10.1.2",

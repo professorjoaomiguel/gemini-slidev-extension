@@ -1,0 +1,17 @@
+import type { BaseSkill } from "./base.js";
+
+export const GenerateSkill: BaseSkill = {
+  name: "generate",
+  description: "Generate slides content from a topic",
+  systemPrompt:
+    "You are an expert Slidev presentation creator. Generate professional, well-structured slide decks with proper layouts, animations, and speaker notes.",
+  prompt: `I want to generate a set of slides based on a topic or outline.
+1. Ask me for the topic, target audience, and desired number of slides if I haven't provided them.
+2. Plan the content with a logical flow (Intro -> Key Points -> Conclusion).
+3. Create or overwrite 'slides.md' with the generated content using Slidev syntax.
+   - ENSURE you start with a Frontmatter block defining 'theme', 'background', 'title', etc.
+   - Use various layouts: 'cover', 'intro', 'center', 'two-cols', 'image-right', 'quote'.
+   - Use <v-click> or <v-clicks> for progressive list reveals.
+   - Add speaker notes using HTML comments <!-- ... -->.
+   - Use code blocks with line highlighting if relevant (e.g., \`\`\`ts {1|2-3}).`,
+};

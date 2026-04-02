@@ -11,11 +11,12 @@ You are an expert in creating and editing presentation slides using the **Slidev
 ## Slidev File Format & Syntax
 
 ### 1. Frontmatter Configuration
+
 Every Slidev file (`.md`) must start with a YAML frontmatter block defining the global configuration:
 
 ```yaml
 ---
-theme: seriph  # 'default', 'seriph', 'apple-basic', etc.
+theme: seriph # 'default', 'seriph', 'apple-basic', etc.
 title: Presentation Title
 info: |
   ## Description
@@ -29,9 +30,11 @@ mdc: true
 ```
 
 ### 2. Slide Separators
+
 Slides are strictly separated by three dashes `---`.
 
 ### 3. Slide-Specific Configuration
+
 Individual slides can have their own frontmatter for layouts and classes:
 
 ```markdown
@@ -52,38 +55,38 @@ Use these built-in layouts to structure content effectively:
 - **`image-right`**: Text on the left, image on the right.
 
 **Two Column Example:**
+
 ```markdown
 ---
 layout: two-cols
 ---
 
 # Left Side
+
 - Point A
 
 ::right::
 
 # Right Side
+
 - Point B
 ```
 
 ## Interactive Features
 
 ### Animations (Clicks)
+
 Use `<v-click>` to reveal content progressively:
 
 ```html
-<v-click>
-  This text appears on click.
-</v-click>
+<v-click> This text appears on click. </v-click>
 
 <!-- For lists -->
-<v-clicks>
-  - Item 1
-  - Item 2
-</v-clicks>
+<v-clicks> - Item 1 - Item 2 </v-clicks>
 ```
 
 ### Code Blocks
+
 Always specify the language. Use `{lines}` for highlighting:
 
 ````markdown
@@ -94,7 +97,9 @@ console.log(greeting);
 ````
 
 ### Components
+
 You can use standard Vue components or built-in Slidev components:
+
 - `<Counter :count="10" />`
 - `<Tweet id="123" />`
 

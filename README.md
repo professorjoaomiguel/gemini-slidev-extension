@@ -24,7 +24,7 @@ A professional Gemini CLI extension for creating, editing, and managing [Slidev]
 Install the extension using the `gemini extensions install` command:
 
 ```bash
-gemini extensions install https://github.com/QIanGua/gemini-slidev-extension
+gemini extensions install https://github.com/professorjoaomiguel/gemini-slidev-extension
 ```
 
 ### 2. Activate
@@ -104,7 +104,7 @@ The extension provides a suite of commands for the entire presentation lifecycle
 This extension adheres to strict quality standards defined in `GEMINI.md`:
 
 - **Markdown-Centric**: Treats `slides.md` as the source of truth.
-- **Component-Driven**: leverages Slidev's built-in layouts and Vue components.
+- **Component-Driven**: Leverages Slidev's built-in layouts and Vue components.
 - **Progressive Disclosure**: Smart use of animations to control information flow.
 
 ### Configuration

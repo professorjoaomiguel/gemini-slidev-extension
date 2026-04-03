@@ -31,13 +31,14 @@ gemini extensions install https://github.com/QIanGua/gemini-slidev-extension
 
 Restart the Gemini CLI. The following commands will be available:
 
-- `/init` - Initialize a new Slidev project
-- `/generate` - Generate complete slide decks from topics
-- `/add` - Add new slides with specific layouts
-- `/edit` - Refine content and styles
-- `/export` - Export presentation to PDF/PNG
-- `/run` - Start the local development server
-- `/slidev` - Main entry point and help
+- `/slidev:init` - Initialize a new Slidev project
+- `/slidev:generate` - Generate complete slide decks from topics
+- `/slidev:add` - Add new slides with specific layouts
+- `/slidev:edit` - Refine content and styles
+- `/slidev:export` - Export presentation to PDF/PNG
+- `/slidev:run` - Start the local development server
+- `/slidev:help` - Show help for the Slidev extension
+- `/slidev` - Main entry point
 
 ## 💡 Usage
 
@@ -48,42 +49,42 @@ The extension provides a suite of commands for the entire presentation lifecycle
 **Initialize Project:**
 
 ```bash
-/init
+/slidev:init
 # "Initialize a new project with the 'seriph' theme"
 ```
 
 **Generate Content:**
 
 ```bash
-/generate "Deep Learning Fundamentals"
+/slidev:generate "Deep Learning Fundamentals"
 # Generates a structured deck with cover, intro, key concepts, and summary
 ```
 
 **Add Slides:**
 
 ```bash
-/add "Comparison of React vs Vue"
+/slidev:add "Comparison of React vs Vue"
 # Adds a 'two-cols' layout slide comparing the frameworks
 ```
 
 **Edit & Refine:**
 
 ```bash
-/edit "Make the title on slide 3 bigger and red"
+/slidev:edit "Make the title on slide 3 bigger and red"
 # Applies 'text-4xl text-red-500' classes using UnoCSS
 ```
 
 **Export:**
 
 ```bash
-/export --format pdf --with-clicks
+/slidev:export --format pdf --with-clicks
 # Exports a PDF including all animation steps
 ```
 
 **Run Server:**
 
 ```bash
-/run
+/slidev:run
 # Starts the dev server at http://localhost:3030
 ```
 
